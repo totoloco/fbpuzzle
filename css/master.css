@@ -1,0 +1,12 @@
+*{
+  font-family:Helvetica,sans-serif,Arial;
+}
+div.puzzle-img img{
+  border:1px solid #000;
+}
+div.puzzle-img{
+  float:left;
+}
+div.puzzle-row{
+  clear:both;
+}
