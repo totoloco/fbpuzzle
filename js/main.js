@@ -55,11 +55,9 @@ $(function (){
   function showTip(){
     do{
       lastTip=Math.floor(Math.random()*puzzle_images.length);
-      alert(lastTip);
     }while(founded.in_array(lastTip));
     var img=puzzle_images[lastTip];
     $('#tip').html('<img border="0" src="'+puzzle_images[lastTip]+'" width="'+puzzle_one_imge_size[0]+'" height="'+puzzle_one_imge_size[1]+'" />');
-    console.log(lastTip);
   }
 
   function showPoints(){

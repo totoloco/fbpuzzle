@@ -1,6 +1,9 @@
 *{
   font-family:Helvetica,sans-serif,Arial;
 }
+body{
+  background:#cfc;
+}
 div#puzzle,div#tip-container{
   float:left;
 }
