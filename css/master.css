@@ -1,6 +1,12 @@
 *{
   font-family:Helvetica,sans-serif,Arial;
 }
+div#puzzle,div#tip-container{
+  float:left;
+}
+div#tip-container{
+  margin-left: 40px;
+}
 div.puzzle-img img{
   border:1px solid #000;
 }

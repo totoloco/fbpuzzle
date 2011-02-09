@@ -1,3 +1,4 @@
+// !!! Importante, el tamaño del siguiente arreglo DEBE ser igual puzzle_rows*puzzle_cols
 var puzzle_images=[
   './img/img.0.jpg',
   './img/img.1.jpg',
@@ -18,6 +19,6 @@ var puzzle_images=[
 ];
 var puzzle_one_imge_size=[200,150];
 var puzzle_rows=4;
-var puzzle_cols=4;
+var puzzle_cols=puzzle_images.length/puzzle_rows;
 var puzzle_image_empty='./img/empty.gif';
 var puzzle_inc_points=10;
