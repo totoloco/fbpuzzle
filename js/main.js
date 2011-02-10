@@ -6,6 +6,7 @@ Array.prototype.in_array=function(){
 }
 
 $(function (){
+  $('#puzzle-url').val(puzzle_url);
   var lastTip=0;
   var founded=[];
   drawEmpty();

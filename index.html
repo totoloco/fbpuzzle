@@ -7,9 +7,18 @@
   <script type="text/javascript" src="./js/head.js"></script>
 </head>
 <body>
+  <noscript>
+    <h1>Tu navegador no tiene activado JavaScript, activalo y volvé a entrar.</h1>
+  </noscript>
   <div id="main">
     <div id="header">
       <h1>¡Puzzle!</h1>
+      <h2>Compartir</h2>
+      <form action="http://www.facebook.com/share.php">
+        <input type="hidden" name="u" id="puzzle-url" value="">
+        <input type="hidden" name="t" value="¡Puzzle!">
+        <input type="submit" class="btn-facebook" value="" />
+      </form>
     </div>
     <div id="content">
       <div id="puzzle">

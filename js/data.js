@@ -22,3 +22,4 @@ var puzzle_rows=4;
 var puzzle_cols=puzzle_images.length/puzzle_rows;
 var puzzle_image_empty='./img/empty.gif';
 var puzzle_inc_points=10;
+var puzzle_url='http://www.google.com/';
