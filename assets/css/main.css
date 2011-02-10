@@ -1,13 +1,12 @@
-
 body {
-	background: #fdfdfd;
-	font-family: Arial, sans-serif;
+	background: #dfd;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 #atomik-wrapper {
+	/*text-align: right;*/
+	width: 90%;
 	margin: 50px auto auto;
-	text-align: right;
-	width: 50%;
 }
 
 	#atomik {
@@ -23,5 +22,35 @@ body {
 		}
 		
 	#atomik-wrapper img {
-		border: 0;
 	}
+
+.no-display{
+  display:none;
+}
+div#puzzle,div#tip-container{
+  float:left;
+}
+div#tip-container{
+  margin-left: 40px;
+}
+div.puzzle-img img{
+  border:1px solid #000;
+}
+div.puzzle-img{
+  float:left;
+}
+div.puzzle-row{
+  clear:both;
+}
+.btn-facebook{
+  color:#FFF;
+  font-size:14px;
+  font-weight:bold;
+  background:url(../images/btn-facebook.png) no-repeat scroll 0 0 transparent;
+  border:0px;
+  background-repeat:no-repeat;
+  height:47px;
+  width:180px;
+  margin-top:10px;
+  cursor:pointer;
+}

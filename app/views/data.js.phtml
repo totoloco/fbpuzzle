@@ -1,0 +1,14 @@
+var puzzle_images=[
+<?php
+for($i=0;$i<16;$i++){
+  echo "  '".Atomik::url(sprintf("/assets/images/img.%d.jpg',\n",$i));
+}
+?>
+];
+var puzzle_one_imge_size=[200,150];
+var puzzle_rows=4;
+var puzzle_cols=puzzle_images.length/puzzle_rows;
+var puzzle_image_empty='<?php echo Atomik::url('/assets/images/empty.gif') ?>';
+var puzzle_inc_points=10;
+var puzzle_url='http://www.google.com/';
+var URL_BASE='<?php echo Atomik::url('/') ?>';

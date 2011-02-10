@@ -19,7 +19,7 @@
 			<?php endforeach; ?>
 		</ul>
 	
-		<div id="content">
+		<div id="htmlcontent">
 			<?php
       echo $contentForLayout;
       $scripts=A('scripts',array());
@@ -28,6 +28,7 @@
     <script type="text/javascript">
     /*<![CDATA[*/
     var URL_BASE='<?php echo Atomik::url('/') ?>';
+    var URL_ASSETS='<?php echo Atomik::url('/assets/') ?>';
     head.js(<?php for($i=0;isset($scripts[$i]);$i++){printf('"%s"',$scripts[$i]); if(isset($scripts[$i+1])) echo',';} ?>);
     /* ]]> */
     </script>
