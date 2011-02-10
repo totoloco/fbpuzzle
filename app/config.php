@@ -1,13 +1,18 @@
 <?php
 
 Atomik::set(array (
-  'app' => 
-  array (
+  'app' => array (
     'layout' => '_layout',
     'default_action' => 'index',
-    'views' => 
-    array (
+    'views' => array (
       'file_extension' => '.phtml',
+      'contexts' => array (
+        'js' => array (
+          'prefix' => 'js',
+          'layout' => false,
+          'content-type' => 'text/javascript',
+        ),
+      ),
     ),
   ),
   'atomik' => 
@@ -30,7 +35,7 @@ Atomik::set(array (
   'scripts' => 
   array (
     0 => 'assets/js/jquery.js',
-    1 => 'assets/js/data.js?r='.time(),
+    1 => 'data.js?r='.time(),
     2 => 'assets/js/main.js?r='.time(),
   ),
 ));
