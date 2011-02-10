@@ -2,15 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title><?php echo A('title', 'My website') ?></title>
+		<title><?php echo A('title', '¡Puzzle!') ?></title>
 		
 		<?php foreach (A('styles', array()) as $style): ?>
 		<link rel="stylesheet" type="text/css" href="<?php echo Atomik::appAsset($style) ?>" />
 		<?php endforeach; ?>
 		
-		<?php foreach (A('scripts', array()) as $script): ?>
-		<script type="text/javascript" src="<?php echo Atomik::appAsset($script) ?>"></script>
-		<?php endforeach; ?>
+    <script type="text/javascript" src="<?php echo Atomik::appAsset('assets/js/head.js') ?>"></script>
 	</head>
 	<body>
 		<ul id="messages">
@@ -22,7 +20,16 @@
 		</ul>
 	
 		<div id="content">
-			<?php echo $contentForLayout; ?>
+			<?php
+      echo $contentForLayout;
+      $scripts=A('scripts',array());
+      ?>
 		</div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    var URL_BASE='<?php echo Atomik::url('/') ?>';
+    head.js(<?php for($i=0;isset($scripts[$i]);$i++){printf('"%s"',$scripts[$i]); if(isset($scripts[$i+1])) echo',';} ?>);
+    /* ]]> */
+    </script>
 	</body>
 </html>

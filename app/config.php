@@ -18,6 +18,7 @@ Atomik::set(array (
     'catch_errors' => true,
     'display_errors' => true,
     'debug' => true,
+    'url_rewriting' => true,
   ),
   'styles' => 
   array (
@@ -28,6 +29,8 @@ Atomik::set(array (
   ),
   'scripts' => 
   array (
-    0 => 'assets/js/libs/jquery.min.js',
+    0 => 'assets/js/jquery.js',
+    1 => 'assets/js/data.js?r='.time(),
+    2 => 'assets/js/main.js?r='.time(),
   ),
 ));
